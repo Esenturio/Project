@@ -13,19 +13,49 @@
   <header class="header">
 
     <div class="header__nav-bar">
-      <h3 class="header__logo"></h3>
-      <nav class="header__nav">
-        <a class="header__link" href=""></a>
-        <a class="header__link" href=""></a>
-        <a class="header__link" href=""></a>
-        <a class="header__link" href=""></a>
-        <a class="header__link" href=""></a>
-        <a class="header__link" href=""></a>
-      </nav>
+      <div class="container header__container flex">
+
+        <h3 class="header__logo active-back m-0">infuzion</h3>
+
+        <nav class="header__nav">
+          <a class="header__link active" href="">design Folio</a>
+          <a class="header__link" href="">Services</a>
+          <a class="header__link" href="">our business</a>
+          <a class="header__link" href="">how we help</a>
+          <a class="header__link" href="">take the tour</a>
+          <a class="header__link" href="">contact</a>
+        </nav>
+
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+      </div>
     </div>
 
   </header>
 
 </div>
+
+
+
+
+
+
+
+<script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var header__nav = document.querySelector(".header__nav");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    header__nav.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+</script>
 </body>
 </html>

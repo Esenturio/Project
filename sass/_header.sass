@@ -1,0 +1,22 @@
+.header__nav-bar
+  text-transform: uppercase
+  background: linear-gradient(to right, $color-green 0, $color-green 15%, #fff 15%)
+  @include media(1350px)
+    background: linear-gradient(to right, $color-green 0, $color-green 10%, #fff 10%)
+.header__nav
+  display: flex
+  padding: 1.5625rem 0
+  font-size: $s-14
+  a
+    padding: 0 1.5625rem
+    @include media(1050px)
+      padding: 0 1.25rem
+    @include media(992px)
+      padding: 2rem 0
+      color: white
+      font-size: 1.625rem
+.header__logo
+  padding: 1.5625rem 1.875rem 1.5625rem 0
+  @include media(1250px)
+    padding: 1.5625rem 1.875rem 1.5625rem 1.875rem
+  font-size: 1.25rem
