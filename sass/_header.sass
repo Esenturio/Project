@@ -1,9 +1,14 @@
 .header__nav-bar
   text-transform: uppercase
-  background: linear-gradient(to right, $color-green 0, $color-green 15%, #fff 15%)
+  @include media(1680px)
+    background: linear-gradient(to right, $color-green 0, $color-green 15%, #fff 15%)
   @include media(1350px)
     background: linear-gradient(to right, $color-green 0, $color-green 10%, #fff 10%)
-.header__nav
+//   @include media(2050px)
+//     background: linear-gradient(to right, $color-green 0, $color-green 25%, #fff 25%)
+//   @include media(2350px)
+//     background: linear-gradient(to right, $color-green 0, $color-green 30%, #fff 30%)
+// .header__nav
   display: flex
   padding: 1.5625rem 0
   font-size: $s-14
@@ -20,3 +25,46 @@
   @include media(1250px)
     padding: 1.5625rem 1.875rem 1.5625rem 1.875rem
   font-size: 1.25rem
+
+
+// .header
+  // height: 110vh
+  overflow: hidden
+.header__content
+  height: max(720px, 100vh)
+  background: url(../img/header_back.jpg) no-repeat 100% / cover
+  text-align: center
+  color: white
+  padding-top: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+.header__cont
+  // display: flex
+  // flex-direction: column
+  margin: auto 0
+.header__title
+  padding: 2.1875rem 5rem
+  background: $color-green
+  display: inline-block
+  font-size: 1.875rem
+  // margin-top: auto
+  margin-bottom: 0.5rem
+.header__info
+  font-size: 1.0625rem
+  max-width: 32.5rem
+  padding: 2.5rem 3.125rem
+  background: $color-black
+  margin: 0 auto
+  line-height: 1.5625rem
+  margin-bottom: 2.5rem
+
+.carts__item
+  width: 17.5rem
+.carts__image
+  height: 10.625rem
+  width: 100%
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
