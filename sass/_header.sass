@@ -1,19 +1,14 @@
 .header__nav-bar
   text-transform: uppercase
-  @include media(1680px)
-    background: linear-gradient(to right, $color-green 0, $color-green 15%, #fff 15%)
+  background: linear-gradient(to right, $color-green 0, $color-green 15%, #fff 15%)
   @include media(1350px)
     background: linear-gradient(to right, $color-green 0, $color-green 10%, #fff 10%)
-//   @include media(2050px)
-//     background: linear-gradient(to right, $color-green 0, $color-green 25%, #fff 25%)
-//   @include media(2350px)
-//     background: linear-gradient(to right, $color-green 0, $color-green 30%, #fff 30%)
-// .header__nav
+.header__nav
   display: flex
   padding: 1.5625rem 0
   font-size: $s-14
   a
-    padding: 0 1.5625rem
+    padding: 0 1.625rem
     @include media(1050px)
       padding: 0 1.25rem
     @include media(992px)
@@ -35,7 +30,7 @@
   background: url(../img/header_back.jpg) no-repeat 100% / cover
   text-align: center
   color: white
-  padding-top: 50px
+  padding-top: 100px
   display: flex
   align-items: center
   justify-content: center
@@ -59,12 +54,3 @@
   line-height: 1.5625rem
   margin-bottom: 2.5rem
 
-.carts__item
-  width: 17.5rem
-.carts__image
-  height: 10.625rem
-  width: 100%
-  img
-    height: 100%
-    width: 100%
-    object-fit: cover

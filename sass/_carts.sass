@@ -1,0 +1,68 @@
+.carts
+  padding: 2.5rem 0
+
+.carts__main
+  @include grid(null, space-between, null, repeat(4,1fr) , 1.25rem)
+
+
+.carts__item
+  max-width: 300px
+  padding-bottom: 2.1875rem
+  position: relative
+  &:hover
+    *
+      color: $color-green
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    n
+    position: absolute
+    top: 0
+    left: 0
+    transition:.5s
+  &:hover::before
+    box-shadow: inset 0 0 0 10px $color-green
+    color: $color-green
+
+
+.carts__image
+  overflow: hidden
+  height: 10.9375rem
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+    
+.carts__content
+  padding: 2.5rem 1.875rem .5rem
+  border-left: 1px #DBE1E7 solid
+  position: relative
+  // &:hover
+  //   border: none
+.carts__logo
+  position: absolute
+  top: -45px
+  left: 98px
+  width: 80px
+  height: 80px
+  border-radius: 100px
+  padding: 4px
+  transition: .5s
+  box-shadow: inset 0 0 0px 5px #F3F3F3
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 100px
+    // box-shadow: 0 0 1px 4px #F3F3F3
+  &:hover
+    box-shadow: inset 0 0 0 5px $color-green
+.carts__title
+  font-size: $s-21
+  color: #737c85
+  line-height: 1.6875rem
+  margin-bottom: 1.125rem
+.carts__info
+  font-size: $s-14
+  line-height: 1.5rem
