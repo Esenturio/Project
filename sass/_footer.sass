@@ -1,0 +1,57 @@
+.footer
+  padding: 60px 0
+  background: $color-black
+  *
+    color: #495559
+
+.footer__container
+  display: flex
+  height: 700px
+  @include media(440px)
+    flex-direction: column
+  
+.decider
+  width: 4.375rem
+.footer__name
+  font-size: 1.25rem
+  margin-right: 4.375rem
+  @include media(600px)
+    margin-right: 1.875rem
+  @include media(440px)
+    margin-bottom: 40px
+.footer__info
+  display: flex
+  @include media(800px)
+    flex-direction: column
+  @include media(440px)
+    flex-direction: row
+    order: 5
+.footer__info-1, .footer__info-2
+  font-size: 0.875rem
+  line-height: 1.5rem
+.footer__info-1
+  margin-right: 1.25rem
+  @include media(800px)
+    margin-bottom: 3.125rem
+    margin-right: 0
+  @include media(440px)
+    margin-right: 1.25rem
+.footer__links
+  // width: 90px
+  font-size: 0.875rem
+  display: flex
+  flex-direction: column
+  margin-left: 4.375rem
+  @include media(600px)
+    margin-left: 1.875rem
+  @include media(440px)
+    flex-direction: row
+    margin-left: 0
+.footer__link
+  margin-bottom: 1.25rem
+  @include media(440px)
+    margin-bottom: 2.5rem
+    margin-right: 0.625rem
+
+
+
