@@ -3,15 +3,26 @@
 
 .carts__main
   @include grid(null, space-between, null, repeat(4,1fr) , 1.25rem)
+  @include media(1190px)
+    grid-template-columns: repeat(3, 1fr)
+  @include media(910px)
+    grid-template-columns: repeat(2, 1fr)
+  @include media(620px)
+    grid-template-columns: repeat(1, 1fr)
+
 
 
 .carts__item
   max-width: 300px
   padding-bottom: 2.1875rem
   position: relative
+  @include media(1190px)
+    margin: 0 auto
   &:hover
     *
       color: $color-green
+  &:hover  .carts__logo
+    box-shadow: inset 0 0 0 5px $color-green
   &::before
     content: ''
     width: 100%
@@ -24,7 +35,6 @@
   &:hover::before
     box-shadow: inset 0 0 0 10px $color-green
     color: $color-green
-
 
 .carts__image
   overflow: hidden
