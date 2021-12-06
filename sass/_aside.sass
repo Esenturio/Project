@@ -1,15 +1,74 @@
-.container-short
-  // max-width: 300px
-.container-long
-  // width: 880px
+.aside__container
+  display: flex
+  padding: 0
 
 .aside__left
-  margin-left: auto
-.aside__right
-  margin-right: auto
-
-.container-long
   display: flex
-  // grid-template-columns: repeat(3, 1fr)
-  // gap: 20px
+  flex-direction: column
+  background: #F8F8F8
+  padding: 100px 120px 50px 60px
+  a
+    color: #444E52
+    font-size: 14px
+    padding: 9px 0
+  @include media(992px)
+    padding-right: 60px
+    padding-left: 40px
+  @include media(650px)
+    padding-right: 40px
+    padding-left: 20px
+.aside__active
+  color: #A9B2BA !important
 
+.aside__right
+  max-width: 55rem
+  margin-left: auto
+  @include media(992px)
+    margin: 0 auto !important
+
+.aside__right
+  display: grid
+  // grid-template-rows: repeat(3, 1fr)
+  padding: 30px 0 0 0
+  gap: 20px
+  grid-auto-flow: column
+  @include media(992px)
+    grid-template-rows: repeat(3, 1fr)
+    justify-items: start
+
+  // @include media(650px)
+  //   grid-template-columns: repeat(1, 1fr)
+  //   justify-content: center
+  // @include media(1200px)
+  //   padding: 30px 30px 0 30px
+  //   margin: 0
+  // @include media(992px)
+  //   padding: 20px 20px 0 20px
+  //   margin: 0 auto !important
+  // @include media(650px)
+  //   padding: 20px 10px 0 10px
+.aside__image
+  // max-width: 300px
+  margin-bottom: 20px
+.aside__img
+  width: 100%
+  vertical-align: center
+  &:nth-child(n+2)
+    @include media(650px)
+      margin-bottom: 0
+
+.aside__item
+  display: flex
+  flex-direction: column
+  @include media(650px)
+    flex-direction: column !important
+
+.item-3
+  @include media(992px)
+    flex-direction: row
+    grid-column: 1/3
+  @include media(650px)
+    grid-column: unset
+.aside__image-5
+  @include media(992px)
+    margin-right: 30px
