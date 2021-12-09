@@ -9,10 +9,41 @@
 
 
 .mackbook__image
-  padding: 0 1rem
+  padding: 0 2rem
   margin: 0 auto
   max-width: 750px
+  position: relative
   img
     width: 100%
+
+.mac-l, .mac-r
+  // font-size: 2rem
+  color: $color-green
+  font-size: 70px
+.mac-l
+  position: absolute
+  top: 280px
+  left: 15vw
+  @include media(1250px)
+    left: 10vw
+  @include media(1050px)
+    left: 5vw
+  @include media(1050px)
+    left: -15px
+  @include media(680px)
+    top: 40%
+.mac-r
+  position: absolute
+  top: 280px
+  right: 15vw
+  @include media(1250px)
+    right: 10vw
+  @include media(1200px)
+    right: 5vw
+  @include media(1050px)
+    right: -15px
+  @include media(680px)
+    top: 40%
+  
 
 //carousel

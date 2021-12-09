@@ -595,12 +595,11 @@
 
         <div class="mackbook__image">
           <img src="img/mackbook.webp" alt="" class="mackbook__img" />
-        </div>r
+        </div>
 
         <div class="mackbook__image">
           <img src="img/mackbook.webp" alt="" class="mackbook__img" />
         </div>
-  
       </section>
 
       <section class="aside">
@@ -615,32 +614,35 @@
           </div>
 
           <div class="aside__right">
-            <div class="aside__item item-1">
-              <div class="aside__image-1 aside__image">
-                <img src="img/aside-1-6.webp" alt="" class="aside__img" />
-              </div>
-              <div class="aside__image-2 aside__image">
-                <img src="img/aside-2.webp" alt="" class="aside__img" />
-              </div>
+            
+            <div class="aside__image-1 aside__image">
+              <img src="img/aside-1-6.webp" alt="" class="aside__img" />
             </div>
 
-            <div class="aside__item item-2">
-              <div class="aside__image-3 aside__image">
-                <img src="img/aside-3.webp" alt="" class="aside__img" />
-              </div>
-              <div class="aside__image-4 aside__image">
-                <img src="img/aside-4.webp" alt="" class="aside__img" />
-              </div>
+            <div class="aside__image-2 aside__image">
+              <img src="img/aside-2.webp" alt="" class="aside__img" />
+            </div>
+            
+
+            
+            <div class="aside__image-3 aside__image">
+              <img src="img/aside-3.webp" alt="" class="aside__img" />
             </div>
 
-            <div class="aside__item item-3">
-              <div class="aside__image-5 aside__image">
-                <img src="img/aside-5.webp" alt="" class="aside__img" />
-              </div>
-              <div class="aside__image-6 aside__image">
-                <img src="img/aside-1-6.webp" alt="" class="aside__img" />
-              </div>
+            <div class="aside__image-4 aside__image">
+              <img src="img/aside-4.webp" alt="" class="aside__img" />
             </div>
+            
+
+            
+            <div class="aside__image-5 aside__image">
+              <img src="img/aside-5.webp" alt="" class="aside__img" />
+            </div>
+
+            <div class="aside__image-6 aside__image">
+              <img src="img/aside-1-6.webp" alt="" class="aside__img" />
+            </div>
+            
           </div>
         </div>
       </section>
@@ -722,7 +724,9 @@
         $(".mackbook").owlCarousel({
           items: 1,
           nav: true,
-          loop: true
+          loop: true,
+          navText : ['<i class="icon-arrow-l mac-l" aria-hidden="true"></i>','<i class="icon-arrow-r mac-r" aria-hidden="true"></i>'],
+          // stageClass : 'mackbook__image'
           
         });
 
