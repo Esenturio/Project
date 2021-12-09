@@ -15,7 +15,7 @@
             <h3 class="header__logo active-back m-0">infuzion</h3>
 
             <nav class="header__nav">
-              <a class="header__link active" href="">design Folio</a>
+              <a class="header__link active-m" href="">design Folio</a>
               <a class="header__link" href="">Services</a>
               <a class="header__link" href="">our business</a>
               <a class="header__link" href="">how we help</a>
@@ -48,6 +48,7 @@
       <section class="carts">
         <div class="container">
           <ul class="carts__main">
+
             <li class="carts__item">
               <div class="carts__image">
                 <img src="img/carts_back-1.webp" alt="" class="carts__img" />
@@ -139,6 +140,9 @@
                 </p>
               </div>
             </li>
+
+          
+
           </ul>
         </div>
       </section>
@@ -591,7 +595,12 @@
 
         <div class="mackbook__image">
           <img src="img/mackbook.webp" alt="" class="mackbook__img" />
+        </div>r
+
+        <div class="mackbook__image">
+          <img src="img/mackbook.webp" alt="" class="mackbook__img" />
         </div>
+  
       </section>
 
       <section class="aside">
@@ -636,8 +645,20 @@
         </div>
       </section>
 
-      <section class="citate active-back">
-        <div class="container">
+      <section class="citate">
+        <div class="container citate__container">
+          <div class="citate__item">
+            <div class="citate__info">
+              <span class="rug-1">"</span>
+              <h2 class="citate__citate">
+                Nam mi enim, auctor non ultricies a, fringilla eu risus.
+                Praesent vitae lorem et elit tincidunt accumsan suscipit eu
+                libero.
+              </h2>
+              <span class="rug-2">"</span>
+            </div>
+            <h4 class="citate__sub">Nam mi enim, auctor non ultricies a</h4>
+          </div>
           <div class="citate__item">
             <div class="citate__info">
               <span class="rug-1">"</span>
@@ -701,14 +722,17 @@
         $(".mackbook").owlCarousel({
           items: 1,
           nav: true,
-          navText: ["f", "$"],
+          loop: true
+          
         });
 
-        // $(".mackbook").owlCarousel({
-        //   items: 1,
-        //   nav: true,
-        //   navText: ["@", "$"],
+
+
+        // $(".carts__main").owlCarousel({
+        //   items: 4,
+        //   // nav: true, 
         // });
+        
       });
     </script>
   </body>
