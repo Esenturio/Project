@@ -3,6 +3,7 @@
   // padding-bottom: 200px
 .gallery__head
   padding: 1.875rem 0
+  font-family: $f-sin-r
   h1
     margin: 0
     font-size: 1.5rem
@@ -27,6 +28,19 @@
   position: relative
   &:hover .gallery__info
     transform: scale(1)
+  &:hover::before
+    display: none
+
+.gallery__item::before
+  content: ''
+  width: 100%
+  height: 100%
+  background: #242a2c
+  opacity: 0.2
+  z-index: 100
+  position: absolute
+  top: 0
+  left: 0
 
 .gallery__img
   width: 100%
@@ -49,6 +63,7 @@
   z-index: 10
   transform: scale(0)
   transition: .5s
+  font-family: $f-sin-r
   *
     font-weight: 400
   

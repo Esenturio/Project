@@ -38,7 +38,7 @@
             </h2>
             <p class="header__info m-0">
               Gutful of bottlo no dramas he's got a massive hooroo. Stands out
-              like a ridgy-didge also shazza got us.
+              like a ridgy-didge also shazza.
             </p>
             <button class="btn btn-transparent btn-short">Buy it now</button>
           </div>
@@ -47,7 +47,7 @@
 
       <section class="carts">
         <div class="container">
-          <ul class="carts__main">
+          <ul class="carts__main owl-carousel">
 
             <li class="carts__item">
               <div class="carts__image">
@@ -126,6 +126,52 @@
                 <div class="carts__logo">
                   <img
                     src="img/carts_logo-4.webp"
+                    alt=""
+                    class="carts__logo-img"
+                  />
+                </div>
+                <h1 class="carts__title m-0">
+                  Lorem ipsum dolor sit amet consectetur
+                </h1>
+                <p class="carts__info m-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris mattis suscipit est, ut imperdiet tortor. Proin sed
+                  molestie massa.
+                </p>
+              </div>
+            </li>
+
+            <li class="carts__item">
+              <div class="carts__image">
+                <img src="img/carts_back-1.webp" alt="" class="carts__img" />
+              </div>
+              <div class="carts__content">
+                <div class="carts__logo">
+                  <img
+                    src="img/carts_logo-1.webp"
+                    alt=""
+                    class="carts__logo-img"
+                  />
+                </div>
+                <h1 class="carts__title m-0">
+                  Lorem ipsum dolor sit amet consectetur
+                </h1>
+                <p class="carts__info m-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris mattis suscipit est, ut imperdiet tortor. Proin sed
+                  molestie massa.
+                </p>
+              </div>
+            </li>
+
+            <li class="carts__item">
+              <div class="carts__image">
+                <img src="img/carts_back-2.webp" alt="" class="carts__img" />
+              </div>
+              <div class="carts__content">
+                <div class="carts__logo">
+                  <img
+                    src="img/carts_logo-2.webp"
                     alt=""
                     class="carts__logo-img"
                   />
@@ -647,8 +693,20 @@
         </div>
       </section>
 
-      <section class="citate">
-        <div class="container citate__container">
+      <section class="citate active-back">
+        <div class="container citate__container owl-carousel">
+          <div class="citate__item">
+            <div class="citate__info">
+              <span class="rug-1">"</span>
+              <h2 class="citate__citate">
+                Nam mi enim, auctor non ultricies a, fringilla eu risus.
+                Praesent vitae lorem et elit tincidunt accumsan suscipit eu
+                libero.
+              </h2>
+              <span class="rug-2">"</span>
+            </div>
+            <h4 class="citate__sub">Nam mi enim, auctor non ultricies a</h4>
+          </div>
           <div class="citate__item">
             <div class="citate__info">
               <span class="rug-1">"</span>
@@ -674,6 +732,7 @@
             <h4 class="citate__sub">Nam mi enim, auctor non ultricies a</h4>
           </div>
         </div>
+        
       </section>
 
       <footer class="footer">
@@ -726,16 +785,45 @@
           nav: true,
           loop: true,
           navText : ['<i class="icon-arrow-l mac-l" aria-hidden="true"></i>','<i class="icon-arrow-r mac-r" aria-hidden="true"></i>'],
-          // stageClass : 'mackbook__image'
-          
+          mouseDrag : false,
+          dots: false,
+          lazyLoad: true
         });
 
 
 
-        // $(".carts__main").owlCarousel({
-        //   items: 4,
-        //   // nav: true, 
-        // });
+        $(".carts__main").owlCarousel({
+          rewind: true, 
+          items: 4,
+          mouseDrag : false,
+          margin: 20,
+          navText : ['<i class="icon-arrow-l carts-l" aria-hidden="true"></i>','<i class="icon-arrow-r carts-r" aria-hidden="true"></i>'],
+          nav: true,
+          dots: true,
+          lazyLoad: true,
+          responsive:{
+            0:{
+              items: 1
+            },
+            550:{
+                items:2
+            },
+            750:{
+                items:3
+            },
+            1100:{
+                items:4
+            }
+        }
+        });
+
+        $(".citate__container").owlCarousel({
+          items: 1,
+          nav: true,
+          loop: true,
+          navText : ['<i class="icon-arrow-l citate-l" aria-hidden="true"></i>','<i class="icon-arrow-r citate-r" aria-hidden="true"></i>'],
+          mouseDrag : false,
+        });
         
       });
     </script>

@@ -1,6 +1,6 @@
 /* sintony-regular - latin */
 @font-face {
-  font-family: 'Sintony';
+  font-family: 'Sintony-reg';
   font-style: normal;
   font-weight: 400;
   src:
@@ -8,7 +8,7 @@
 }
 /* sintony-700 - latin */
 @font-face {
-  font-family: 'Sintony';
+  font-family: 'Sintony-b';
   font-style: normal;
   font-weight: 700;
   src:
@@ -17,23 +17,39 @@
 @font-face {
   font-family: 'Helvetica-bold';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src:
-       url('../fonts/Helvetica\ Neue\ Condensed\ Bold.woff') format('woff'); /* Modern Browsers */
+       url('../fonts/HelveticaNeueCondensedBold.woff') format('woff'); /* Modern Browsers */
 }
 @font-face {
   font-family: 'Helvetica-light';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   src:
        url('../fonts//HelveticaNeueCyr-Light.woff') format('woff'); /* Modern Browsers */
 }
 @font-face {
   font-family: 'Helvetica-thin';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   src:
        url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff'); /* Modern Browsers */
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src:
+       url('../fonts/lato-v20-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato-b';
+  font-style: normal;
+  font-weight: 700;
+  src:
+       url('../fonts/lato-v20-latin-700.woff') format('woff'); /* Modern Browsers */
 }
 
 

@@ -1,14 +1,22 @@
+.header
+  font-family: $f-sin-r
+  *
+    font-weight: 400
 .header__nav-bar
+  border-bottom: 2px solid #5E615F
   text-transform: uppercase
   background: linear-gradient(to right, $color-green 0, $color-green 15%, #fff 15%)
   @include media(1350px)
     background: linear-gradient(to right, $color-green 0, $color-green 10%, #fff 10%)
+  *
+    font-family: $f-sin-b
 .header__nav
   display: flex
   padding: 1.5625rem 0
   font-size: $s-14
   a
     padding: 0 1.625rem
+    color: #586165
     @include media(1050px)
       padding: 0 1.25rem
     @include media(992px)

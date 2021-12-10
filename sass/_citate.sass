@@ -1,7 +1,10 @@
 .citate
   padding: 70px 0
-  padding-bottom: 100px
+  // padding-bottom: 100px
   text-align: center
+  font-family: $f-sin-r
+  *
+    font-weight: 400
 
 .citate__info
   max-width: 66.25rem
@@ -15,13 +18,46 @@
   font-size: 30px
 .rug-1
   position: absolute
-  left: 0
+  left: 20px
   top: -20px
 .rug-2
   position: absolute
-  right: 0
-  bottom: -25px
+  right: 20px
+  bottom: -35px
   font-style: italic
-
 .citate__sub
   font-size: 18px
+  font-weight: 300
+
+.citate__container
+  position: relative
+  padding: 0 30px
+  .icon-arrow-r, .icon-arrow-l
+    display: inline-block
+    font-size: 25px
+    line-height: 30px
+    width: 30px
+    height: 30px
+    border-radius: 20px
+    background-color: #51b29a
+    color: white
+    position: absolute
+    text-align: center
+    top: 55%
+  .owl-dots
+    width: 100%
+    position: absolute
+    bottom: -10px
+    display: flex
+    justify-content: center
+    position: relative
+  .owl-dot
+    background: none !important
+    border: 3.5px solid #fff !important
+  .owl-dot.active
+    border: 3.5px solid $color-green !important
+    background: #fff !important
+.citate-l
+  left: 0
+.citate-r
+  right: 0

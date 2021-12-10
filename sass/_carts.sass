@@ -1,14 +1,10 @@
 .carts
   padding: 2.5rem 0
+  font-family: $f-hel-r
 
 .carts__main
   @include grid(null, space-between, null, repeat(4,1fr) , 1.25rem)
-  @include media(1190px)
-    grid-template-columns: repeat(3, 1fr)
-  @include media(910px)
-    grid-template-columns: repeat(2, 1fr)
-  @include media(620px)
-    grid-template-columns: repeat(1, 1fr)
+  position: relative
 
 
 
@@ -34,14 +30,31 @@
   &:hover::before
     box-shadow: inset 0 0 0 10px $color-green
     color: $color-green
+  &:hover .carts__image::after
+    opacity: 0
+  &:hover .carts__content
+    border: none
+    transition: border 0s
+    margin-left: 1px
 
 .carts__image
   overflow: hidden
   height: 10.9375rem
+  transition: 0.4s
   img
     height: 100%
     width: 100%
     object-fit: cover
+  &::after
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    position: absolute
+    background: #fff
+    opacity: 0.23
+
     
 .carts__content
   padding: 2.5rem 1.875rem .5rem
@@ -75,3 +88,43 @@
 .carts__info
   font-size: $s-14
   line-height: 1.5rem
+
+
+
+
+.carts-l, .carts-r
+  position: absolute
+  font-size: 30px
+.carts-l
+  left: 40%
+  bottom: -7px
+  @include media(550px)
+    left: 30%
+  @include media(480px)
+    left: 15%
+.carts-r
+  right: 40%
+  bottom: -7px
+  @include media(550px)
+    right: 30%
+  @include media(480px)
+    right: 15%
+.carts
+  .owl-dots
+    margin: 0 auto !important
+    display: flex
+    justify-content: center
+    // position: absolute
+    // left: 48%
+    // right: 48%
+  .owl-dot
+    width: 18px
+    height: 18px
+    border-radius: 40px
+    border: 4px solid #F3F3F3 !important
+    margin-right: 3px
+    &:last-child
+      margin-right: 0
+  .owl-dot.active
+    border: 4px solid #fff !important
+    background: #929DA5 !important
